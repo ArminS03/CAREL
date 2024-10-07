@@ -139,6 +139,7 @@ class PPOAlgo(BaseAlgo):
                 masks = exps.mask.detach().clone().cpu().numpy()
                 completed_videos = numpy.where(masks == 0)[0]
                 video_info = numpy.array([[i // self.num_frames_per_proc, i % self.num_frames_per_proc] for i in completed_videos])
+                
 
                 num_samples = 0
                 # index of successful episode

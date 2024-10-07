@@ -35,4 +35,14 @@ MANIFEST
 
 # PyBuilder
 .pybuilder/
-target/
+
+**/__pycache__
+
+*.idea
+
+**experiments
+
+**target/
+**data/
+**lab/
+**gym-miniworld/
